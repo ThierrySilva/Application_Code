@@ -1,0 +1,239 @@
+﻿body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f1faee;
+    font-family: Calibri, Arial;
+}
+
+header {
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.principal-header {
+    background-color: #AB060F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.principal-header image {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 5px;
+    vertical-align: middle;
+   
+}
+
+.principal-header h1 {
+    font-size: clamp(1.1em, 1em + 3vw, 2.5em);
+    color: #FFF;
+}
+
+.principal-header button {
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    right: 20px;
+    vertical-align: middle;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+
+.principal-header button:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.principal-header button .menu-hamburguer {
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+.menu-top {
+    display: block;
+    margin-bottom: 5px;
+    
+}
+
+.menu-top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #23272B;
+}
+
+.menu-top li {
+    float: left;
+}
+
+.menu-top li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-top li a:hover {
+    background-color: #111;
+}
+
+div .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    min-height: 350px;
+    border: 1px solid #211F1F;
+    border-radius: 5px;
+}
+
+div .search-panel {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 20%;
+    margin: 0;
+    
+}
+
+div .search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+    div .search-input .input-component {
+        border: 1px solid black;
+    }
+
+div .search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+div .carousel-div-manual {
+
+    position: absolute;
+    height: 80%;
+    width: 100%;    
+    bottom: 0;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div .carousel-line-manual {
+    display: none;
+}
+
+
+div .card-body {
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+div .cards-panel {
+    bottom: 15px;
+    width: 100%;
+    height: 80%;
+}
+
+.label-clients {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+
+    div .carousel-div-manual {
+        position: absolute;
+        bottom: 0;
+    }
+
+    div .center {
+       
+        min-height: 500px;
+        width: 89vw;
+    }
+
+    .principal-header button {
+        
+        display: block;
+    }
+
+    .menu-top {
+        display: none;
+    }
+
+    .jumbotron {
+        margin-bottom: 5px;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33.333%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
+
+
+
